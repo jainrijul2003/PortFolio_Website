@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/man.png">
+
+
+</head>
+<body bgcolor="black">
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Rijul Jain</span> </h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am an undergraduate engineering student at Thapar Institute of Engineering and Technology, specializing in Computer Engineering. I have experience in web development, working with technologies like HTML, CSS, JavaScript, PHP, Laravel, and Vue.js. I enjoy problem-solving and creating applications that enhance user experiences. I am passionate about using my skills to develop real-world solutions.
+                  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>BE in Computer Engineering at Thapar Institute of Engineering and Technology,<br> CGPA: 7.98</li>
+                        <li><span>2020 - 2021</span><br>Class 12th, Delhi International Public School,<br> Percentage: 94.8%</li>
+                        <li><span>2018 - 2019</span><br>Class 10th, Delhi International Public School,<br> Percentage: 86%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Machine Learning</span><br>Training Models on datasets</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2024 - July 2024</span><br>Backend Intern at <b style="font-size: large;">Subtlelabs Software Solutions</b> </li>
+                        <li><span>June 2023 - July 2023</span><br>Web-Developer Intern at <b style="font-size: large;">Doodhvale.com</b> </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-laptop-code"></i>
+                <h2>Web Developer Intern</h2>
+                <h3>Subtlelabs Software Solutions</h3>
+                <p>Summer Internship 2024</p>
+                <p>Created the backend for a website Sign In and Sign Up page using Laravel Framework (PHP Blade). Developed user-friendly sign in and sign up pages with JWT authentication for session verification and security.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fas fa-laptop-code"></i>
+                <h2>Web Developer Intern</h2>
+                <h3>Doodhvale.com</h3>
+                <p>Summer Internship 2023</p>
+                <p>Created a fully responsive About Page for doodhvale.com using Vue.js Framework (HTML, CSS, JavaScript). Developed a clean, user-friendly interface to enhance user engagement.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div> -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1.jpeg" alt="Sign In and Sign Up Page">
+                <div class="layer">
+                   <b style="font-size: large;"> Sign In and Sign Up Page</b> <br>
+                    <p>Developed user-friendly sign in and sign up page using Laravel framework with JWT authentication for session verification and security.</p>
+                    <a href="https://github.com/jainrijul2003/LoginSystemJWTauth.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.jpeg" alt="Real Estate Website">
+                <div class="layer">
+                 <b style="font-size: large;">   Real Estate Website</b> <br>
+                    <p>Designed and developed a responsive real estate website with a user-friendly interface, complete with full backend and frontend connected to a database to store user information.</p>
+                    <a href="https://github.com/jainrijul2003/RealEstateWebsite.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3.jpeg" alt="Autonomous Vehicle (Buggy)">
+                <div class="layer">
+                  <b style="font-size: large;">  Autonomous Vehicle (Buggy)</b> <br>
+                    <p>Created an autonomous vehicle that is under wireless supervisory control from a remote station using Zigbee for communication. The vehicle follows a pre-defined path using an infrared sensor and prevents collisions using an ultrasonic sensor.</p>
+                    <a href="https://drive.google.com/drive/folders/1YzEKfTIQXkN4lDiTwXjITuB3K5QriWC_?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/4.jpeg" alt="Crafting Dynamic Data Dashboards">
+                <div class="layer">
+                 <b style="font-size: large;">   Clustering Analysis Project</b> <br>
+                    <p>This project involves performing clustering analysis on a dataset using various clustering algorithms and preprocessing techniques</p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+               
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/5.jpeg" alt="Amazon Clone Website">
+                <div class="layer">
+                 <b style="font-size: large;">  Amazon Clone Website</b> <br>
+                    <p>Created a basic amazon front end clone website using HTML, CSS , Js</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="images/6.jpeg" alt="Credit Card Data Sampling Project">
+                <div class="layer">
+                <b style="font-size: large;">  Credit Card Data Sampling Project</b> <br>
+                    <p>This project involves sampling credit card data to create a balanced dataset for further analysis and modeling. The aim is to address issues of class imbalance and ensure that the dataset is suitable for training machine learning models.</p>
+                    <a href="https://github.com/jainrijul2003/Sampling.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a  class="btn" id="see-more-btn">See more</a>
+    </div>
+</div>
+
+<!-- Skills-->
+ 
+<section id="skills" class="section scrollspy">
+    
+    <div class="container">
+        <h1 class="sub-title">Skills</h1><br><br>
+
+      <!-- Languages and Databases -->
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Languages and Databases</h4>
+          <div class="row text-center">
+            
+            <div class="col s4 m2">
+              <img alt="" src="/images/img/html5-300x300.jpg" class="responsive-img" />HTML5
+            </div>
+            <div class="col s4 m2">
+              <img alt="" src="/images/img/css3-300x300.jpg" class="responsive-img" />CSS3
+            </div>
+            <div class="col s4 m2">
+                <img alt="" src="images/img/clogo.png" class="responsive-img" />C++
+              </div>
+            
+            <div class="col s4 m2">
+              <img alt="" src="images/img/js-logo-png-5.png" class="responsive-img" />JavaScript
+            </div>
+            <div class="col s4 m2">
+                <img alt="" src="/images/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+            </div>
+            <div class="col s4 m2">
+                <img alt="" src="/images/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Frameworks -->
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Frameworks</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img alt="" src="images/img/vue-icon-2048x1766-ntogpmti.png" class="responsive-img" />Vue Js
+            </div>
+            <div class="col s4 m2">
+              <img alt="" src="images/img/laravel-logo.png" class="responsive-img" />Laravel
+            </div>
+            <div class="col s4 m2">
+              <img alt="" src="/images/img/bootstrap.png" class="responsive-img" />Bootstrap
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> rijul2003.jain@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (+91) 8287749424</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rijuljain2003/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jainrijul2003" target="_blank"><i class="fab fa-github" ></i></a>
+                    <!-- <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
+                </div>
+                <a href="https://drive.google.com/file/d/1ifZSj3Gl7yABIGCUYkBr0Es4Sn7z2HnV/view?usp=sharing" target="_blank" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rijul.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+
+        document.getElementById('see-more-btn').addEventListener('click', function() {
+            const hiddenWorks = document.querySelectorAll('.work.hidden');
+            hiddenWorks.forEach(work => work.classList.remove('hidden'));
+            this.style.display = 'none';
+        });
+
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
