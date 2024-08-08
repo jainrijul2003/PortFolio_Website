@@ -23,23 +23,6 @@ This portfolio website is designed to highlight my work as a software developer.
 - **Projects Showcase**: A gallery of my projects with descriptions and links.
 - **Contact Form**: A section to contact me directly.
 
-## Technologies Used
-
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Font Awesome**
-- **Google Fonts**
-
-## Setup
-
-To set up the project locally, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/jainrijul2003/portfolio-website.git
-
-
 This README file provides an overview of your portfolio website, including its features, technologies used, setup instructions, usage, and contact information. You can modify it as needed to better fit your specific project.
 
    
